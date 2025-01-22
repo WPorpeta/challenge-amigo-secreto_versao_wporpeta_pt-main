@@ -21,6 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .main-content {
@@ -50,6 +51,7 @@ body {
     align-items: center;
     padding: 20px;
     width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 /* Títulos */
@@ -59,6 +61,7 @@ body {
     font-weight: 900;
     font-style: italic;
     color: var(--color-white);
+    text-align: center;
 }
 
 .section-title {
@@ -85,23 +88,12 @@ body {
     border: 2px solid #000;
     border-radius: 25px 0 0 25px;
     font-size: 16px;
+    transition: box-shadow 0.3s ease;
 }
 
-.button-container {
-    width: 300px;
-    justify-content: center;
-}
-
-/* Estilos de entrada de texto */
-.input-title {
-    flex: 1;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 2px solid #333;
-    border-right: none;
-    border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+.input-name:focus {
+    box-shadow: 0 0 8px var(--color-primary);
+    outline: none;
 }
 
 /* Estilos de botão */
@@ -113,6 +105,11 @@ button {
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 .button-add {
@@ -123,6 +120,27 @@ button {
 
 .button-add:hover {
     background-color: #a1a1a1;
+}
+
+.button-draw {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.button-draw img {
+    margin-right: 10px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+    transform: scale(1.05);
 }
 
 /* Listas */
@@ -140,23 +158,48 @@ ul {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+    animation: fadeInResult 0.5s ease-in-out;
 }
 
-/* Botão de sortear título */
-.button-draw {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-button);
-    font-size: 16px;
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.button-draw img {
-    margin-right: 40px;
+@keyframes fadeInResult {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
-.button-draw:hover {
-    background-color: var(--color-button-hover);
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .input-name {
+        font-size: 14px;
+    }
 }
