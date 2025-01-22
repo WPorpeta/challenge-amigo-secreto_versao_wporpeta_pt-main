@@ -1,20 +1,36 @@
-# Amigo Secreto
+# 🎉 Amigo Secreto 🎉  
 
-## Descrição
+Bem-vindo ao projeto **Amigo Secreto**! Challenge da Alura - Este aplicativo interativo permite que você adicione amigos, organize a lista em ordem alfabética, sorteie nomes sem repetições e gerencie os participantes com facilidade. Criado como parte de um desafio da Alura, ele combina simplicidade, funcionalidade e boas práticas de programação.
 
-O projeto **Amigo Secreto** é uma aplicação interativa e divertida para realizar sorteios de amigos secretos. Ele permite que os usuários insiram os nomes dos participantes, sorteiem aleatoriamente o amigo secreto e visualizem os resultados de forma prática e eficiente.  
+---
 
-Este projeto foi desenvolvido como parte do **Challenge de Programação** do curso da **Alura**, onde pude colocar em prática os conhecimentos adquiridos durante os estudos.
+## 🚀 Demonstração
 
-## Funcionalidades
+Você pode acessar o projeto diretamente através do GitHub Pages:  
+[🔗 Amigo Secreto - Demo](https://WPorpeta.github.io/challenge-amigo-secreto_versao_wporpeta_pt-main)
 
-- Adicionar nomes à lista de amigos.
-- Sortear um amigo secreto de forma aleatória.
-- Limpar a lista de amigos adicionados sem necessidade de recarregar a página.
+---
 
-## Tecnologias Utilizadas
+## 📝 Funcionalidades
 
-- **HTML5**: Para a estrutura do projeto.
-- **CSS3**: Para a estilização.
-- **JavaScript**: Para a lógica de funcionamento e interação com o usuário.
+- ✅ Adicionar amigos à lista com validação de entrada.
+- 🔠 Ordenar a lista em ordem alfabética com um clique.
+- 🎲 Sortear nomes garantindo que não haja repetições até que todos os amigos sejam sorteados.
+- 🧹 Limpar a lista de amigos e reiniciar o sorteio.
+- 🔄 Interface acessível e responsiva.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+Este projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:  
+
+- **HTML5:** Estrutura semântica do aplicativo.  
+- **CSS3:** Estilização da interface com design limpo.  
+- **JavaScript (ES6+):** Lógica interativa para funcionalidades principais.  
+- **Google Fonts:** Estilização de fontes modernas.  
+- **Git/GitHub:** Controle de versão e hospedagem do projeto.  
+
+---
+
 
