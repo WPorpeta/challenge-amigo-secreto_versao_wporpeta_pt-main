@@ -1,6 +1,14 @@
 // Array para armazenar os nomes dos amigos
 let amigos = [];
 
+// Inclui evento ao apertar tecla no Input
+document.getElementById('amigo').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault(); // Para previnir ação padrão
+        adicionarAmigo();
+    }
+        });
+
 // Função para adicionar um amigo à lista
 function adicionarAmigo() {
     // Obter o valor do campo de entrada
