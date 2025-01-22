@@ -59,7 +59,7 @@ function sortearAmigo() {
 
     // Exibir o nome do amigo sorteado com a frase "Amigo secreto é:"
     const resultado = document.getElementById("resultado");
-    resultado.innerHTML = `O Amigo secreto sortaé: <strong>${amigoSorteado}</strong>`;
+    resultado.innerHTML = `O Amigo secreto sorte é: <strong>${amigoSorteado}</strong>`;
 }
 
 // Função para limpar a lista de amigos
